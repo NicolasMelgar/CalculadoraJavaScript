@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --color-principal: darkslategrey;
+
+}
+
+.contenedor{
+    /*con esto defino el tamaño de la calculadora*/
+    width: 60vw;
+    height: 80vh;
+    /*con esto la centro sin mayor problema*/
+    margin: 50px auto;
+
+    /*esto lo uso para alinear los botones*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*literalmente el final de la calculadora, algos 3D???*/
+    
+    border: 10px solid var(--color-principal);
+    background-color: var(--color-principal);
+
+    /*Ver sombra*/
+    box-shadow: 10px, 5px;
+
+}
+
+#resultado{
+    flex-basis: 90%;
+    max-width: 40vw;
+    text-align: right;
+    margin: 15px auto;
+    font-size: 50px;
+    border-radius: 15px;
+}
+
+.resultado{
+    flex-basis: 90%;
+    margin: 15px auto;
+    text-align: right;
+    font-size: 50px;
+    border-radius: 15px;
+}
+
+
+button{
+    flex-basis: 25%;
+    font-size: 50px;
+    border: 2px solid grey;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 300ms linear ;
+}
+
+button:hover{
+    background-color: cornflowerblue;
+    opacity: 0.6;
+}
+
